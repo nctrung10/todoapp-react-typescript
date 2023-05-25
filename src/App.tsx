@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodosContextProvider from './store/todos-context';
+
+import Todos from './components/Todos';
+import TodoForm from './components/TodoForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodosContextProvider>
+      <div className="p-5 dark:bg-slate-800 h-auto min-h-screen">
+        <h1 className="text-3xl font-bold text-sky-600 mb-4">To-do App</h1>
+        <TodoForm />
+        <Todos />
+      </div>
+    </TodosContextProvider>
   );
 }
 
