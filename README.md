@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-A basic TO-DO App built by ReactJS, TailwindCSS, TypeScript and Firebase.
+A basic TO-DO App is built with ReactJS, TailwindCSS, TypeScript and Firebase.
 
 #
 Visit the page: https://todoapp-nctrung10.vercel.app
